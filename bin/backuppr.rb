@@ -1,4 +1,4 @@
-#!/opt/local/bin/ruby -w
+#!/usr/bin/env ruby
 
 #
 # Tiny script around rdiff-backup to automate backups since Time Machine sucks.
@@ -62,6 +62,7 @@ $config.options     ||= %w[
                             --create-full-path
                             --exclude-special-files
                             --override-chars-to-quote ''
+                            --terminal-verbosity 6
 
                          ].join " "
 
